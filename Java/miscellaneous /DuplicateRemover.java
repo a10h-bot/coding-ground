@@ -15,7 +15,7 @@ public class DuplicateRemover {
             frequency[c]++;
         }
         final char[] charArray = input.toCharArray();
-        for (int i1 =  charArray.length-1; i1 >=0; i1--) {
+        for (int i1 = charArray.length - 1; i1 >= 0; i1--) {
             final char c = charArray[i1];
             frequency[c]--;
             if (top == 0 || stack[top - 1] < c) {

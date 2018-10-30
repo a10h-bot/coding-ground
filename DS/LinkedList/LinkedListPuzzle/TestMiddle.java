@@ -25,7 +25,6 @@ public class TestMiddle {
             System.out.println("Middle Elment of list is " + slow_ptr.data);
 
         }
-
     }
 
     public void InsertValueInList(int data) {
