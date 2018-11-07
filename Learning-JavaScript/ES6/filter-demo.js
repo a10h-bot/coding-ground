@@ -1,4 +1,5 @@
 //Without use of filter
+//Or we can say imperative way :
 
 const people = [
   { name: "John Doe", age: 16 },
@@ -21,6 +22,7 @@ const peopleAbove18 = collection => {
 console.log(peopleAbove18(people));
 
 //same code with use of filter
+//functional way
 
 const peopleAbove18New = collection => {
   return collection.filter(x => x.age >= 18);
