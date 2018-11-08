@@ -20,6 +20,9 @@ const peopleAbove18 = collection => {
 };
 
 console.log(peopleAbove18(people));
+//[ { name: 'Thomas Calls', age: 19 },
+//{ name: 'Liam Smith', age: 20 },
+//{ name: 'Jessy Pinkman', age: 18 } ]
 
 //same code with use of filter
 //functional way
@@ -29,3 +32,7 @@ const peopleAbove18New = collection => {
 };
 
 console.log(peopleAbove18New(people));
+
+//{ name: 'Thomas Calls', age: 19 },
+//{ name: 'Liam Smith', age: 20 },
+//{ name: 'Jessy Pinkman', age: 18 } ]
