@@ -52,5 +52,15 @@ console.log(filterInPair(collection));
 const numArray = [1, 2, 5, 9, 3, 6, 4];
 const n = 7;
 const filterInPair2 = (n, sum) => {
-  return n.filter();
+  return n.filter(x => {
+    for (let i = 0; i < n.length - 1; i++) {
+      for (let j = i + 1; j < n.length; j++) {
+        if (x[i] + x[j] === sum) {
+          return x;
+        }
+      }
+    }
+  });
 };
+
+console.log(filterInPair2(numArray, n));

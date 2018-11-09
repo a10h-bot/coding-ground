@@ -33,3 +33,5 @@ const findTeaLoverNew = collection => {
     return element;
   });
 };
+
+console.log(sum(range(1, 10)));
