@@ -15,7 +15,7 @@
 //input : "the sky is blue" 
 // output : "eht yks si eulb"
 
-public class RevserseWord {
+/* public class RevserseWord {
     public static void main(String[] args) {
         String input = "the sky is blue";
         String output = "";
@@ -29,5 +29,25 @@ public class RevserseWord {
             output += res + " ";
         }
         System.out.println(output);
+    }
+}
+*/
+// input : "hello"
+//output : " olleh"
+
+public class RevserseWord {
+    public static void main(String[] args) {
+        String s = "Hello";
+        String res = "";
+        char[] charArray = s.toCharArray();
+        for (int i = charArray.length - 1; i >= 0; i--) {
+            res += charArray[i];
+        }
+        System.out.println(res);
+        System.out.println(s.hashCode());
+        String s2 = "Hello";
+        String s3 = new String("Hello");
+        System.out.println(s == s2);
+        System.out.println(s3 == s2);
     }
 }
