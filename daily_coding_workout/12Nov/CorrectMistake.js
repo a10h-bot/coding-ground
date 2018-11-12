@@ -7,8 +7,8 @@ S is misinterpreted as 5
 O is misinterpreted as 0
 I is misinterpreted as 1
 The test cases contain numbers only by mistake.
-
-
+*/
+//Method # 1
 const correct = str => {
   str = str.replace(/0/g, "O");
   str = str.replace(/5/g, "S");
@@ -16,9 +16,9 @@ const correct = str => {
   return str;
 };
 
-console.log(correct("L0ND0N5I"));
-*/
+console.log(correct("L0ND0N51"));
 
+//Method #2
 let solution = str => {
   return str.replace(/0|5|1/g, letter => {
     switch (letter) {
@@ -31,5 +31,12 @@ let solution = str => {
     }
   });
 };
+//Method #3
+console.log(solution("L0ND0N51"));
 
-console.log(solution("L0ND0N5I"));
+let x = string => {
+  const mistakes = { 0: "O", 5: "S", 1: "I" };
+  return string.replace(/0|5|1/g, letter => mistakes[letter]);
+};
+
+console.log(x("L0ND0N51"));
