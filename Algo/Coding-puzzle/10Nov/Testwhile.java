@@ -4,5 +4,10 @@ class Testwhile {
         while (--T > 0) {
             System.out.println(T);
         }
+        Integer x = Integer.MAX_VALUE;
+        System.out.println(x);
+        int y = Integer.MIN_VALUE;
+        System.out.println(y);
     }
+
 }
