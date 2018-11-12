@@ -29,8 +29,7 @@ let narcissistic = value => {
     s += x;
   }
 
-  if (s === value) return true;
-  else return false;
+  return s === value;
 };
 
 console.log(narcissistic(7));
