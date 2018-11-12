@@ -10,10 +10,10 @@ The test cases contain numbers only by mistake.
 */
 //Method # 1
 const correct = str => {
-  str = str.replace(/0/g, "O");
-  str = str.replace(/5/g, "S");
-  str = str.replace(/I/g, "1");
-  return str;
+  return str
+    .replace(/0/g, "O")
+    .replace(/5/g, "S")
+    .replace(/1/g, "I");
 };
 
 console.log(correct("L0ND0N51"));
@@ -36,7 +36,7 @@ console.log(solution("L0ND0N51"));
 
 let x = string => {
   const mistakes = { 0: "O", 5: "S", 1: "I" };
-  return string.replace(/0|5|1/g, letter => mistakes[letter]);
+  return string.replace(/[051]/g, letter => mistakes[letter]);
 };
 
 console.log(x("L0ND0N51"));
