@@ -36,3 +36,7 @@ let x = array => {
 };
 
 console.log(x([1, 0, 0, 1, 1, 0, 0, 0, 1, 1]));
+
+for (let i = 0; i < 9; i++) {
+  console.log(Math.floor(Math.random() * 10) + 2);
+}
