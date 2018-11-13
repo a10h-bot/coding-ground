@@ -7,9 +7,7 @@ For example, [2, 4, 6, 2, 5] should return 13, since we pick 2, 6, and 5. [5, 1,
 
 let largest_sum = arr => {
   let i = 0;
-  while (i < arr.lentth) {
-      
-  }
+  while (i < arr.lentth) {}
 };
 
 console.log(largest_sum([2, 4, 6, 2, 5]), 10);
