@@ -11,7 +11,7 @@ let countDigits = n => {
 };
 
 console.log(countDigits(1276666)); // 7
-
+//---------------------------------------------------------------------------------------
 //2 >check for Armstronh number ! like 153 = 1*1*1 + 5*5*5 + 3*3*3  // 153 is an Armstrong number.
 
 let isArmstrongNum = n => {
@@ -33,6 +33,7 @@ console.log(isArmstrongNum(153)); //true
 console.log(isArmstrongNum(15656)); //false
 
 console.log(1 % 10);
+//----------------------------------------------------------------------------
 // check if the numbers is prime ?
 const isNumberPrime = n => {
   let count = 0;
@@ -50,6 +51,7 @@ const isNumberPrime = n => {
 };
 
 console.log(isNumberPrime(99)); //false
+//______________________________________________________________________________________
 // 2nd method
 let isPrime = n => {
   let flag = true;
