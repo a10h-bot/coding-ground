@@ -1,28 +1,23 @@
 
-//Java Strings Introduction
+// Day 7: Arrays
 import java.util.*;
 
 public class Solution7 {
 
-    public static void main(String[] args) {
+    // private static final Scanner scanner = new Scanner(System.in);
 
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String A = sc.next();
-        String B = sc.next();
-        /* Enter your code here. Print output to STDOUT. */
-        System.out.println(A.length() + B.length());
-        if (A.compareTo(B) > 0) {
-            System.out.println("Yes");
-        } else {
-            System.out.println("No");
+        int n = sc.nextInt();
+        int[] A = new int[n];
+        for (int i = 0; i < n; i++) {
+            A[i] = sc.nextInt();
+        }
+        for (int i = n - 1; i >= 0; i--) {
+            n--;
+            System.out.print(A[n] + " ");
         }
 
-        String temp1 = A.toUpperCase();
-        String temp2 = B.toUpperCase();
-        A = temp1.charAt(0) + A.substring(1);
-        B = temp2.charAt(0) + B.substring(1);
-
-        System.out.println(A + " " + B);
-
     }
+
 }

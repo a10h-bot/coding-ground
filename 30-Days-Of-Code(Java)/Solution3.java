@@ -1,28 +1,27 @@
 
-/*Given an integer, , perform the following conditional actions:
-If  is odd, print Weird
-If  is even and in the inclusive range of  to , print Not Weird
-If  is even and in the inclusive range of  to , print Weird
-If  is even and greater than , print Not Weird
-*/
-
+// Day 3: Intro to Conditional Statements
 import java.util.*;
 
 public class Solution3 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        if (n % 2 != 0) {
-            System.out.println("Weird");
-        }
 
-        else if (n % 2 == 0 && n >= 2 && n <= 5) {
-            System.out.println("Not Weird");
-        } else if (n % 2 == 0 && n >= 6 && n <= 20) {
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int N = scanner.nextInt();
+        scanner.close();
+        if (N <= 0) {
+            return;
+        } else if (N % 2 != 0) {
+
             System.out.println("Weird");
-        } else {
+        } else if (N % 2 == 0 && N >= 2 && N <= 5) {
             System.out.println("Not Weird");
-        }
+        } else if (N % 2 == 0 && N >= 6 && N <= 20) {
+            System.out.println("Weird");
+        } else if (N % 2 == 0 && N > 20) {
+            System.out.println("Not Weird");
+        } else
+            return;
 
     }
 }
