@@ -10,3 +10,17 @@ async function f() {
 }
 
 f();
+
+var friends = ["Mike", "Stacy", "Andy", "Rick"];
+
+friends.forEach(function (eachName, index) {
+    console.log(index + 1 + ". " + eachName);
+});
+
+let s = {
+    City: "Patna",
+    Country: "India"
+};
+console.log(s);
+console.log(s.City + "   " + s.Country);
+console.log(`${s.City} ${s.Country}`);
