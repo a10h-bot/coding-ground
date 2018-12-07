@@ -2,8 +2,7 @@ const form = document.querySelector("form");
 const input = document.querySelector("input");
 const loadingImage = document.querySelector("#loadingImage");
 const imageSection = document.querySelector(".images");
-const API_URL =
-  "https://api.unsplash.com/photos/?client_id=86410845e5d2a0c406f039c45802fe8a74fe6ec878e0758e829222b70c85137d&&include_states=true&formats=jpeg&exclude_nude=true";
+const API_URL = "https://api.unsplash.com/photos/?client_id=86410845e5d2a0c406f039c45802fe8a74fe6ec878e0758e829222b70c85137d&&include_states=true&formats=jpeg&exclude_nude=true";
 
 form.addEventListener("submit", formSubmitted);
 
@@ -21,12 +20,24 @@ function formSubmitted(event) {
 //}
 function search(searchTerm) {
   const url = `${API_URL}&term=${searchTerm}`;
-  //console.log(url);
+  console.log(url);
 
+
+  fetch(url)
+    .then(response => response.json())
+    .then(result => {
+
+      console.log(result.photos);
+
+    });
+}
+
+/*function search(searchTerm) {
+  const url = `${API_URL}&term=${searchTerm}`;
   return fetch(url)
     .then(response => response.json())
     .then(result => {
-      return result;
+      return result.photos;
     });
 }
 
@@ -37,4 +48,4 @@ function displayImages(result) {
     imageSection.appendChild(imageElement);
   }
 }
-//how to make an HTTP requet in JavaScript
+*/
