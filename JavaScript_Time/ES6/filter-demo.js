@@ -36,3 +36,16 @@ console.log(peopleAbove18New(people));
 //{ name: 'Thomas Calls', age: 19 },
 //{ name: 'Liam Smith', age: 20 },
 //{ name: 'Jessy Pinkman', age: 18 } ]
+//1every thing in javaScript is an object
+
+let x = [3, 8, 9, 10];
+let y = x.filter(x => {
+  return x % 2 === 0;
+});
+
+console.log(y);
+let sum = x.reduce((accumulator, element) => {
+  return (accumulator += element);
+}, 0);
+
+console.log(sum);

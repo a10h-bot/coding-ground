@@ -1,12 +1,12 @@
 //Greedy approach : make locally optimal choice at each stage.
 
-
-class CakeType{
+public class CakeType {
      final int weight;
      final int value;
-     public CakeType(){
-         this.weight=weight;
-         this.value=value;
+
+     public CakeType() {
+          this.weight = weight;
+          this.value = value;
      }
 }
 
@@ -18,5 +18,3 @@ public static void main(String[] args) {
         
    }
 }
-
- 
