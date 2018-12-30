@@ -51,12 +51,24 @@ const object1 = {
 };
 
 console.log(Object.getOwnPropertyNames(object1));
+function wrapValue(n) {
+  let local = n;
+  return () => local;
+}
 
-function chicken() {
-  return egg();
+let wrap1 = wrapValue(1);
+let wrap2 = wrapValue(2);
+console.log(wrap1());
+// → 1
+console.log(wrap2());
+// → 2
+
+function Test(n) {
+  return function TestValue() {
+    return "I am from Test value";
+  };
 }
-function egg() {
-  return chicken();
-}
-console.log(chicken() + " came first.");
-// → ??
+
+const calTest = Test(9);
+const callTestValue = calTest();
+console.log(callTestValue);
