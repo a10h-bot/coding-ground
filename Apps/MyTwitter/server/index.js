@@ -6,8 +6,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
   res.json({
-    message: "Hello World ",
-    apple: [1, 2, 7]
+    message: "The requset is completed "
   });
 });
 
