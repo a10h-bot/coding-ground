@@ -31,4 +31,4 @@ function generateBarcode(prodCode) {
     return M;
   }
 }
-console.log(generateBarcode("036000291452"));
+console.log(generateBarcode("3600029145"));
