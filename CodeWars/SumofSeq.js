@@ -7,3 +7,4 @@ let sequenceSum = (begin, end, step) => {
 };
 
 console.log(sequenceSum());
+

@@ -14,21 +14,18 @@
 // nums2 = [2,5,6], n = 3
 
 // Output: [1,2,2,3,5,6]
-class Solution {
+
+class Solution2 {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int x = m - 1;
         int y = n - 1;
         int z = m + n - 1;
-        while (y >= 0) {
-            if (x >= 0 && nums1[x] < nums2[y]) {
-                nums1[z] = nums2[y];
-                y--;
+        while (z >= 0) {
+            if (y < 0 || (x >= 0 && nums1[x] > nums2[y])) {
+                nums1[z--] = nums1[x--];
             } else {
-                nums1[z] = nums1[x];
-                x--;
+                nums1[z--] = nums2[y--];
             }
-            z--;
         }
-
     }
 }
