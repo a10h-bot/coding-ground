@@ -72,3 +72,13 @@ function Test(n) {
 const calTest = Test(9);
 const callTestValue = calTest();
 console.log(callTestValue);
+//-------------------------------------------------------
+let myArray = [2, 5, 3, 10, 3, 5, 2];
+//const uniqArray = arr => [...new Set(arr)];
+const uniqArray = arr => Array.from(new Set(arr));
+
+console.log(uniqArray(myArray));
+
+[0];
+(0)[1];
+1;
