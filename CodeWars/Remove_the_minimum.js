@@ -8,17 +8,17 @@ function removeSmallest(array) {
       smallestIndex = i;
     }
   }
-  // let newArray = [];
-  // for (let i = 0; i < array.length; i++) {
-  //   if (i !== smallestIndex) {
-  //     newArray.push(array[i]);
-  //   }
-  // }
-  // return newArray;
-  //let newArray = array.slice();
-  let newArray = [...array];
-  newArray.splice(smallestIndex, 1);
+  let newArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if (i !== smallestIndex) {
+      newArray.push(array[i]);
+    }
+  }
   return newArray;
+  let newArray = array.slice();
+  // let newArray = [...array];
+  // newArray.splice(smallestIndex, 1);
+  // return newArray;
 
 }
 
