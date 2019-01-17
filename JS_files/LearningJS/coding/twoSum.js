@@ -29,3 +29,4 @@ function findSum2(arr, sum) {
 //let A = [10, 15, 3, 7];
 let s1 = 11;
 console.log(findSum2([3, 5, 2, -4, 8, 11, 9], s1));
+console.log('hello world !');
