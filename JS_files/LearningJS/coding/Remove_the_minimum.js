@@ -8,13 +8,17 @@ function removeSmallest(array) {
       smallestIndex = i;
     }
   }
-  let A = [];
-  for (let i = 0; i < array.length; i++) {
-    if (i !== smallestIndex) {
-      A.push(array[i]);
-    }
-  }
-  return A;
+  // let newArray = [];
+  // for (let i = 0; i < array.length; i++) {
+  //   if (i !== smallestIndex) {
+  //     newArray.push(array[i]);
+  //   }
+  // }
+  // return newArray;
+  let newArray = array.slice();
+  newArray.splice(smallestIndex, 1);
+  return newArray;
+
 }
 
 console.log(removeSmallest([1, 3, 6]));
