@@ -15,7 +15,8 @@ function removeSmallest(array) {
   //   }
   // }
   // return newArray;
-  let newArray = array.slice();
+  //let newArray = array.slice();
+  let newArray = [...array];
   newArray.splice(smallestIndex, 1);
   return newArray;
 
