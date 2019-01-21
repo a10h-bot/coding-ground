@@ -16,7 +16,6 @@ class linkedList {
     }
     newNode.next = this.head;
     this.head = newNode;
-
   }
   //add data at the end of the list
   addLast(data) {
@@ -29,7 +28,6 @@ class linkedList {
       temp = temp.next;
     }
     temp.next = newNode;
-
   }
   //add a data at a given position from begining
   addAtPostion(data, k) {
@@ -42,8 +40,6 @@ class linkedList {
     }
     newNode.next = temp.next;
     temp.next = newNode;
-
-
   }
   printList() {
     let temp = this.head;
@@ -58,20 +54,29 @@ class linkedList {
     for (let temp = this.head; temp !== null; temp = temp.next) {
       listElements.push(temp.data);
     }
-    return listElements.join('')
+    return listElements.join("");
   }
-
+  deleteFirst() {
+    if (this.head === null) return;
+    if (this.head.next === null) {
+      this.head = null;
+    }
+    let temp = this.head;
+    this.head = temp.next;
+    temp.next = null;
+  }
+  deleteLastNode() {
+    let temp = this.head;
+    while (temp.next.next != null) {
+      temp = temp.next;
+    }
+    temp.next = null;
+  }
 }
 
-const x = new linkedList()
-x.addFirst('hello')
-x.addFirst('hey')
-x.addFirst('Good')
-x.addLast('Bye')
-x.addAtPostion("See you", 3)
-x.addAtPostion("be", 5)
-for (let i = 0; i < 5; i++) {
-  x.addLast(i);
-}
-x.printList()
-console.log(x.createAstring());
+const x = new linkedList();
+x.addFirst("C");
+x.addLast("Java");
+x.addLast("Python");
+x.deleteFirst();
+//x.printList();

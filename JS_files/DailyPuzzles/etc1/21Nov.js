@@ -24,7 +24,7 @@ for(let i=0;i<people.length;i++){
 }
 */
 let result = people.filter(x => x.age % 2 !== 0)
-let result2 = people.filter(function (n) => {
+let result2 = people.filter((n) => {
     return n.age > 18;
 });
 
