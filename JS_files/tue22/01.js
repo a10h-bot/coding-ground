@@ -27,7 +27,7 @@ function accum(str) {
 console.log(accum('abcd'));
 console.log(accum('RqaEzty'));
 console.log(accum('cwAt'));
-
+//------------------------------------------------------------------------------------------------------
 function accum1(str) {
   let res = '';
   for (let i = 0; i < str.length; i++) {
@@ -43,7 +43,7 @@ function accum1(str) {
     }
 
   }
-  return res
+  return res;
 }
 
 
