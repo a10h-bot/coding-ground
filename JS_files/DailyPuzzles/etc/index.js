@@ -9,7 +9,6 @@ fetch(Url)
   console.log(res)
 });
 
-
 const Http = new XMLHttpRequest();
 const url = "https://jsonplaceholder.typicode.com/posts";
 Http.open("GET", url);

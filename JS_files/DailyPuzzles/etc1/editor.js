@@ -9,8 +9,8 @@ function Append(W) {
 }
 //!to delete k charctor from S
 function Delete(k) {}
-//!to print kth charactor of S
+// print kth charactor of S
 function print(k) {}
 //!To undo appned and delete
 function undo() {}
-console.log(Append(""));
+console.log(Append(""))
