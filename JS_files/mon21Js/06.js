@@ -19,3 +19,8 @@ function reverseArray1(array) {
   return array;
 }
 console.log(reverseArray1([2, 4, 6, 9, 10]));
+
+let array = new Array(2, 4, 7, 8, 9, 10);
+let array1 = [2, 4, 7, 8, 9, 10, 11];
+array = array1;
+console.log(array);
