@@ -1,0 +1,11 @@
+{
+  "name": "reverse-string",
+  "version": "1.0.0",
+  "description": "reverse a given string",
+  "main": "reverse-string.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Anand",
+  "license": "ISC"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "vowels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vowels.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Anand",
+  "license": "ISC"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "reverse-int",
+  "version": "1.0.0",
+  "description": "",
+  "main": "reverse-int.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Anand",
+  "license": "ISC"
+}
