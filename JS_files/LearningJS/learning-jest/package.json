@@ -1,0 +1,11 @@
+{
+  "name": "learning-jest",
+  "version": "1.0.0",
+  "description": "'jest'",
+  "main": "sum.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "anand",
+  "license": "ISC"
+}

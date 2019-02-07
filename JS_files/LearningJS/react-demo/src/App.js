@@ -1,35 +1,55 @@
 import React, { Component } from "react";
 import "./App.css";
-import Todos from "./components/Todos";
-
 class App extends Component {
-  state = {
-    todos: [
-      {
-        id: 1,
-        Title: "Write the source code",
-        Completed: false
+  constructor(props) {
+    super(props);
+    this.state = {
+      message: 'Learn react',
+      newTodo: '',
+      todos: [{
+        title: 'Lean Java',
+        done: false
       },
       {
-        id: 2,
-        Title: "Compile the code to machine code",
-        Completed: false
-      },
-      {
-        id: 3,
-        Title: "Run the application",
-        Completed: false
+        title: 'Learn C++',
+        done: false
       }
-    ]
-  };
+      ]
+    }
+  }
+  newTodoChange(e) {
+    this.setState({
+      newTodo: e.target.value
+    })
+  }
+  formSubmitted(e) {
+    e.preventDefault();
+    this.setState({
+      todos: [...this.state.todos, {
+        title: this.state.newTodo,
+        done: false
+      }
+      ]
+    })
+  }
   render() {
-    console.log(this.state.todos);
     return (
-      <div className="App">
-        <Todos />
+      <div>
+        <h1>{this.state.message}</h1>
+        <form onSubmit={(e) => this.formSubmitted(e)}>
+          <label htmlFor='newTodo'>New Todo </label><br></br>
+          <input class="form-control mr-sm-2" onChange={(e) => this.newTodoChange(e)} type='text' name='todo'></input>
+          <br></br>
+          <br></br>
+          <button type='submit' class="btn btn-primary btn-lg btn-block">Add</button>
+        </form>
+        <ul>
+          {this.state.todos.map(t => {
+            return <li key={t.title}> {t.title}</li>
+          })}
+        </ul>
       </div>
     );
   }
 }
-
 export default App;
