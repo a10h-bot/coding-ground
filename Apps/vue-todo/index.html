@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+
+<body>
+  <main id="app">
+    <h3 class='title'>{{title}}</h3>
+    <form @submit.prevent='addTodo'>
+      <label for="todo">Add Todo</label>
+      <input v-model='newTodo' type="text" id='todo' name='todo' class='u-full-width'>
+      <button type='submit' class='button-primary'>Add</button>
+    </form>
+    <ul>
+      <h2>
+        <li v-for='todo in todos'>{{todo.title}}</li>
+      </h2>
+    </ul>
+    <ol>
+      <todo-item></todo-item>
+      <todo-item></todo-item>
+      <name></name>
+    </ol>
+
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

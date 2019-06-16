@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "bad-words": "^3.0.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",
@@ -19,6 +20,12 @@
     "monk": "^6.0.6",
     "morgan": "^1.9.1",
     "profanity-hindi": "^1.1.0"
+=======
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "monk": "^6.0.6",
+    "morgan": "^1.9.1"
+>>>>>>> af6e914d834e7736474aa24de8821cb937cc7126
   },
   "devDependencies": {
     "nodemon": "^1.18.9"

@@ -1,0 +1,11 @@
+{
+  "name": "capitalize",
+  "version": "1.0.0",
+  "description": "capitalize first occurence of letter in a word",
+  "main": "capitalize.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Anand",
+  "license": "ISC"
+}

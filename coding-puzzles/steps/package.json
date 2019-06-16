@@ -1,0 +1,11 @@
+{
+  "name": "steps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "steps.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Anand",
+  "license": "ISC"
+}

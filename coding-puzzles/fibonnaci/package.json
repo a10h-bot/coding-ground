@@ -1,0 +1,12 @@
+{
+  "name": "fibonnaci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fibonnaci.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Anand",
+  "license": "ISC"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "palindrome",
+  "version": "1.0.0",
+  "description": "Palindrome program",
+  "main": "palindrome.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Anand",
+  "license": "ISC",
+  "keywords": []
+}

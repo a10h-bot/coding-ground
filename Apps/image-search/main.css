@@ -1,0 +1,27 @@
+body {
+    width: 80%;
+    margin: 2em auto 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
+}
+
+.button {
+    background-color: cyan;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%
+}
+
+button:hover {
+    background-color: rgba(128, 128, 128, 0.399);
+}

@@ -1,0 +1,11 @@
+{
+  "name": "maxchar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "maxchar.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Anand",
+  "license": "ISC"
+}
